@@ -1,0 +1,84 @@
+$height: 55px;
+.container {
+  display: flex;
+  height: 100vh;
+  .left {
+    width: 200px;
+    min-width: 200px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .column {
+    height: 80px;
+    margin: 10px;
+    padding: 20px;
+  }
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+    --custom-height: #{$height};
+    height: #{$height};
+    .wrapper {
+      height: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    .inputWrapper {
+      width: 40rem;
+      height: 100%;
+      // max-height: 400px;
+      // height: auto;
+      outline: none;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 15px 20px;
+      font-size: 16px;
+      resize: none;
+      box-sizing: border-box;
+    }
+  }
+  .scrollable-content {
+    flex: 1;
+    overflow-y: auto;
+    .session {
+      padding: 10px;
+      border: 1px solid #fff;
+      margin-bottom: 20px;
+      color: #fff;
+      transition: all 0.3s ease;
+      &:hover{
+        background-color: #fff;
+        color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .replyContent {
+    padding: 20px 1.75rem;
+    min-width: 700px;
+  }
+
+  .bottom {
+    height: 25px;
+    font-size: 12px;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.active {
+  background-color: #fff;
+  color: #000 !important;
+  transition: all 0.3s ease;
+}

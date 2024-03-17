@@ -1,0 +1,79 @@
+@for $i from 1 through 20 {
+	.mgt#{$i} {
+		margin-top: $i * 1px;
+	}
+  .mgr#{$i} {
+		margin-right: $i * 1px;
+	}
+  .mgb#{$i} {
+		margin-bottom: $i * 1px;
+	}
+  .mgl#{$i} {
+		margin-left: $i * 1px;
+	}
+  .pdt#{$i} {
+		padding-top: $i * 1px;
+	}
+  .pdr#{$i} {
+		padding-right: $i * 1px;
+	}
+  .pdb#{$i} {
+		padding-bottom: $i * 1px;
+	}
+  .pdl#{$i} {
+		padding-left: $i * 1px;
+	}
+  .mglr#{$i} {
+		margin-left: $i * 1px;
+    margin-right: $i * 1px;
+	}
+  .pdlr#{$i} {
+		padding-left: $i * 1px;
+    padding-right: $i * 1px;
+	}
+  .mgtb#{$i} {
+		margin-top: $i * 1px;
+    margin-bottom: $i * 1px;
+	}
+  .pdtb#{$i} {
+		padding-top: $i * 1px;
+    padding-bottom: $i * 1px;
+  }
+  .mg#{$i} {
+    margin: $i * 1px;
+  }
+  .pd#{$i} {
+    padding: $i * 1px;
+  }
+}
+
+//全局圆角 行高 br-0 ~ br-100
+@for $i from 0 through 100 {
+	.br#{$i} {
+		border-radius: $i * 1px;
+	}
+}
+
+.br-auth {
+  border-radius: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.mx-auto {
+  margin: auto;
+}

@@ -1,0 +1,17 @@
+.replyWrapper {
+  display: flex;
+  gap: 0.75rem;
+  .avatar {
+    width: 24px;
+    height: 24px;
+  }
+  .content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 4px;
+    .name {
+      font-weight: 600;
+    }
+  }
+}

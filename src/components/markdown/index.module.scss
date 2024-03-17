@@ -1,0 +1,15 @@
+.codeWrapper {
+  position: relative;
+  .lang {
+    position: absolute;
+    display: flex;
+    right: 15px;
+    top: 10px;
+    .copy {
+      cursor: pointer;
+    }
+  }
+  .a {
+    background-color: #333;
+  }
+}
